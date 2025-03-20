@@ -13,8 +13,8 @@ COPY requirements.txt .
 # Install any dependencies
 RUN pip install -r requirements.txt
 
-# Copy the content of the local src directory to the working directory
-COPY app.py .
+# Copy all project files
+COPY . .  
 
 # Specify the command to run on container start
 CMD [ "python", "./app.py" ]
