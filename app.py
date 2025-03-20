@@ -659,4 +659,4 @@ def leave_chat(data):
     emit("chat_left", {"message": f"User left chat for event {event_id}"}, room=event_id)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000)
